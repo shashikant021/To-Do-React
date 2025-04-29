@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Header.jsx css  */
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+/* App.jsx css  */
+.todo-add {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 5px;
+}
+.todo-input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.add-button {
+  padding: 10px 45px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.add-button:hover {
+  background-color: #969292;
+}
+
+/* ToDoItem.jsx css  */
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+}
+.item-text {
+  font-size: 1rem;
+  text-align: justify;
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.item-complete {
+  font-size: 1.3rem;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+.item-edit {
+  font-size: 1.3rem;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+.item-delete {
+  font-size: 1.3rem;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+.item-complete:hover {
+  background-color: #969292;
+}
+.item-edit:hover {
+  background-color: #969292;
+}
+.item-delete:hover {
+  background-color: #969292;
+}
