@@ -1,12 +1,69 @@
-# React + Vite
+📝 To-Do List App
+This is a simple To-Do List application built using React and Vite. It allows users to:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✅ Add new tasks
 
-Currently, two official plugins are available:
+✅ Mark tasks as complete/incomplete
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Edit existing tasks
 
-## Expanding the ESLint configuration
+✅ Delete tasks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Persist data using localStorage
+
+🚀 How It Works
+1. Adding a Task
+Type a task into the input field and click the "Add" button.
+
+Tasks must be at least 5 characters long.
+
+The new task will appear in the list below.
+
+2. Completing a Task
+Click the ✅ or 🔁 icon next to any task to mark it as complete or undo it.
+
+Completed tasks are shown with a line-through.
+
+3. Editing a Task
+Click the ✏️ icon to edit a task.
+
+After editing, click "Save" to update it.
+
+4. Deleting a Task
+Click the 🗑️ icon to remove a task from the list.
+
+5. Saving to LocalStorage
+All tasks are automatically saved to the browser’s localStorage.
+
+When you refresh or reopen the app, your tasks will still be there!
+
+🧱 Tech Stack
+React (with functional components & hooks)
+
+Vite (for fast development)
+
+LocalStorage (for data persistence)
+
+CSS for styling
+
+React Icons (for intuitive button icons)
+
+🧪 How to Run Locally
+
+1. Clone the repo:
+
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+2. Install dependencies:
+
+npm install
+
+3. Start the development server:
+
+npm run dev
+
+4. Open in browser:
+
+http://localhost:5173
+

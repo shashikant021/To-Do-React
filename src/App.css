@@ -27,6 +27,7 @@
   padding: 10px 45px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  font-weight: bold;
 }
 .add-button:hover {
   background-color: #969292;
@@ -72,10 +73,14 @@
 }
 .item-complete:hover {
   background-color: #969292;
+  color: green;
 }
 .item-edit:hover {
   background-color: #969292;
+  color: blue;
 }
 .item-delete:hover {
   background-color: #969292;
+  color: red;
 }
+

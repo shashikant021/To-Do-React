@@ -4,27 +4,18 @@ import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    //load tasks from localStorage
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
+
   const [newTask, setNewTask] = useState("");
 
-  // Load tasks from localStorage when the app initializes
-  // useEffect(() => {
-  //   // Retrieve and parse tasks from localStorage
-  //   const savedTasks = localStorage.getItem("tasks");
-  //   if (savedTasks) {
-  //     try {
-  //       setTasks(JSON.parse(savedTasks)); // Parse only valid JSON strings
-  //     } catch (error) {
-  //       console.error("Invalid JSON in localStorage:", error);
-  //       localStorage.removeItem("tasks"); // Remove invalid data to avoid issues
-  //     }
-  //   }
-  // }, []);
-
-  // Save tasks to localStorage whenever the tasks array changes
-  // useEffect(() => {
-  //   localStorage.setItem("tasks", JSON.stringify(tasks));
-  // }, [tasks]);
+  //save to localStorage whenever tasks change
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   function addTask() {
     if (newTask === "") {
@@ -45,7 +36,7 @@ function App() {
       setTasks([...tasks, newItem]);
       setNewTask("");
     }
-    console.log(tasks);
+    // console.log(tasks);
   }
 
   function handleDeleteTask(id) {
